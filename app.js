@@ -24,10 +24,16 @@ function countdown() {
     secondsel.innerHTML=seconds
 
     
-
+    if(daysel.innerText == 0 && hoursel.innerText == 0 && minsel.innerText == 0 && secondsel.innerText == 0){
+        document.body.innerHTML = `<h1>Yeni Yil Sayaci</h1>
+        <div class="countdown-container">
+            <h2>Yeni Yıla girmiş bulunmaktasınız</h2>
+        </div>`
+    }
 
 
 }
 
 
 setInterval(countdown, 1000);
+
